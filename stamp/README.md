@@ -1,4 +1,4 @@
-# JABAWS
+# STAMP
 
 [STAMP](http://www.compbio.dundee.ac.uk/downloads/stamp/) - Structural Alignment of Multiple Proteins.
 
