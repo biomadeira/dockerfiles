@@ -5,7 +5,7 @@ NAME = biomadeira/jabaws
 
 .PHONY: all build push run test clean
 
-all: build, push
+all: build
 
 build:
 	docker pull $(NAME):$(TAG)
