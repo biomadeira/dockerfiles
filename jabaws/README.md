@@ -6,19 +6,19 @@
 
 Pull the image:
 ```
-docker pull bartongroup/jabaws:2.2
+docker pull biomadeira/jabaws:2.2
 ```
 
 To start a container:
 ```
-docker run --rm -it -p 8080:8080 bartongroup/jabaws:2.2
+docker run --rm -it -p 8080:8080 biomadeira/jabaws:2.2
 ```
 
 ## More Information
 
  * [JABAWS Homepage](http://www.compbio.dundee.ac.uk/jabaws22/)
  * [JABAWS Crucible](https://source.jalview.org/crucible/changelog/jabaws)
- * [Docker Hub](https://hub.docker.com/u/bartongroup/jabaws)
+ * [Docker Hub](https://hub.docker.com/u/biomadeira/jabaws)
 
 
 ## License

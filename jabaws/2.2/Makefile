@@ -1,34 +1,33 @@
 REGISTRY = https://hub.docker.com/u
 TAG=2.2
-NAME = bartongroup/jabaws
-IMAGE = $(REGISTRY)/$(NAME)
+NAME = biomadeira/jabaws
 
 
 .PHONY: all build push run test clean
 
-all: build
+all: build, push
 
 build:
-	docker pull bartongroup/jabaws:2.2
+	docker pull $(NAME):$(TAG)
 ifeq ($(LATEST), $(TAG))
-	docker build --no-cache --rm -t $(IMAGE):$(TAG) -t $(IMAGE):latest .
+	docker build --no-cache --rm -t $(NAME):$(TAG) -t $(IMAGE):latest .
 else
-	docker build --no-cache --rm -t $(IMAGE):$(TAG) .
+	docker build --no-cache --rm -t $(NAME):$(TAG) .
 endif
 
 # docker login required for push
 push:
-	docker push $(IMAGE)
+	docker push $(NAME)
 
 run:
-	docker run --rm -it -p 8080:8080 bartongroup/jabaws:2.2
+	docker run --rm -it -p 8080:8080 biomadeira/jabaws:2.2
 
 test:
-	docker run --rm -it -p 8080:8080 bartongroup/jabaws:2.2
+	docker run --rm -it -p 8080:8080 biomadeira/jabaws:2.2
 
 clean:
-ifeq ($(strip $(IMAGE)),)
+ifeq ($(strip $(NAME)),)
 	echo "Nothing to delete"
 else
-	docker ps -a | awk '{ print $$1,$$2 }' | grep "$(IMAGE)" | awk '{print $$1 }' | xargs -I {} docker rm {}
+	docker ps -a | awk '{ print $$1,$$2 }' | grep "$(NAME)" | awk '{print $$1 }' | xargs -I {} docker rm {}
 endif

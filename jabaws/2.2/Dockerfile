@@ -1,15 +1,17 @@
 #################################################################
 # Dockerfile
 #
-# Software:         JABAWS
-# Software Version: 2.2
-# Description:      JABAWS Distributed Web Services for Bioinformatics
-# Website:          http://www.compbio.dundee.ac.uk/jabaws/, http://www.compbio.dundee.ac.uk/jabaws22/
-# Provides:         jabaws
-# Base Image:       openjdk:8-jre, tomcat:8.5
-# Build Cmd:        docker build -t bartongroup/jabaws:2.2 .
-# Pull Cmd:         docker pull bartongroup/jabaws:2.2
-# Run Cmd:          docker run --rm -it -p 8080:8080 bartongroup/jabaws:2.2
+# Software:     JABAWS
+# Version:      2.2
+# Description:  JABAWS Distributed Web Services for Bioinformatics
+# Website:      http://www.compbio.dundee.ac.uk/jabaws/, http://www.compbio.dundee.ac.uk/jabaws22/
+# Provides:     jabaws
+# Base Image:   openjdk:8-jre, tomcat:8.5
+# Build Cmd:    docker build -t biomadeira/jabaws:2.2 .
+# Push Cmd:     docker push biomadeira/jabaws:2.2
+# Pull Cmd:     docker pull biomadeira/jabaws:2.2
+# Run Cmd:      docker run --rm -it -p 8080:8080 biomadeira/jabaws:2.2
+# Exit Signal:  Ctr-C
 #################################################################
 
 # Base Image
