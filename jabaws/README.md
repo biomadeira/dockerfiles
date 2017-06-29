@@ -2,6 +2,10 @@
 
 [JABAWS](http://www.compbio.dundee.ac.uk/jabaws22/) Distributed Web Services for Bioinformatics.
 
+## Supported Tags
+
+- [`2.2`, `latest`, jabaws/2.2/Dockerfile](https://github.com/biomadeira/dockerfiles/blob/master/jabaws/2.2/Dockerfile)
+
 ## Example Usage
 
 Pull the image:

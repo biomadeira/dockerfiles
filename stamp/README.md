@@ -2,6 +2,10 @@
 
 [STAMP](http://www.compbio.dundee.ac.uk/downloads/stamp/) - Structural Alignment of Multiple Proteins.
 
+## Supported Tags
+
+- [`4.4.2`, `latest`, (stamp/4.4.2/Dockerfile)](https://github.com/biomadeira/dockerfiles/blob/master/stamp/4.4.2/Dockerfile)
+
 ## Example Usage
 
 Pull the image:
