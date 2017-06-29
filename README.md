@@ -1,3 +1,3 @@
-## Docker Tools and Workflows at the Barton Group
+## Docker Tools and Workflows
 
-This repository contains a collection of Dockerfiles provided by the Barton Group. It will also provide Common Workflow Language (CWL) Tool/Workflow specifications for some of the group's software.
+This repository contains a collection of Dockerfiles. It will also provide Common Workflow Language (CWL) Tool/Workflow specifications.
